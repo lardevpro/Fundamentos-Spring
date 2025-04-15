@@ -6,7 +6,7 @@
 
 
 
-# 🌱 Ejercicios y Conceptos de Spring Framework
+# 🌱 Conceptos de Spring Framework
 
 Este repositorio lo he creado para mostrar distintos conceptos fundamentales del framework **Spring**, mediante ejemplos prácticos organizados por tema.
 
