@@ -13,13 +13,11 @@ public class JefeEmpleado implements Empleados {
 	
 	@Override
 	public String getTareas() {
-		// TODO Auto-generated method stub
 			return "Gestiono las cuestiones relativas a mis empleados de sección";
 	}
 
 	@Override
 	public String getInforme() {
-		// TODO Auto-generated method stub
 		return "Informe presentado por el jefe con modificaciones: " +informeNuevo.getInforme();
 	}	
 }
