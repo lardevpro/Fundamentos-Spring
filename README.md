@@ -1,4 +1,5 @@
-![Spring Framework Logo](https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg" width="500" alt="Spring Framework Logo">
+
 
 
 
