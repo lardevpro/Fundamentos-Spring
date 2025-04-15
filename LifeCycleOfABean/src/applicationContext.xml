@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<!-- creación de dependencia (este tema no tiene relación) -->
+    <bean id="miInforme" class="es.lardevpro.IoC.Informe"/>
+	
+	
+	<!-- en este caso hago uso de las propiedade 'init-method' y 'destroy-method' con los nombres de los métodos que quiero usar   -->
+    <bean id="miSecretarioEmpleado" class="es.lardevpro.IoC.DirectorEmpleado" init-method="init" destroy-method="destroy">
+        <constructor-arg name="informeNuevo" ref="miInforme"/>
+        
+    </bean>
+
+</beans>
