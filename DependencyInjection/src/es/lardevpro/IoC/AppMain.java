@@ -14,7 +14,7 @@ public class AppMain {
 		// petición de beans
 		SecretarioEmpleado empleado3 = contexto.getBean("miSecretarioEmpleado",SecretarioEmpleado.class);
 		
-		// comprobación de las dependencias introducidas por construntur y métodos
+		// comprobación de las dependencias introducidas por construntur y métodos mediante xml y archivo externo
 		System.out.println(empleado3.getTareas());
 		
 		System.out.println(empleado3.getInforme());

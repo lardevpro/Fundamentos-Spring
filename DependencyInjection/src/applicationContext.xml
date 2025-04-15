@@ -11,13 +11,18 @@
     <!-- Leer archivo externo para insercion de dependencias mediante .properties -->
     <context:property-placeholder location="classpath:datosEmpleados.properties"/>
 
-	<!--  -->
-    <bean id="miInforme" class="es.lardevpro.IoC.Informe"/>
 
+	<!-- dependencia a la que se le aplica un identificador para depués manipularla  -->
+    <bean id="miInforme" class="es.lardevpro.IoC.Informe"/>
+    
+    
+	<!--  beans al que se le inyectan dependencias mediante el constructor con la propiedad 'constructor-arg'-->
     <bean id="miEmpleado" class="es.lardevpro.IoC.JefeEmpleado">    
         <constructor-arg ref="miInforme"/>
     </bean>
-
+    
+    
+	<!-- beans al que se le inyecta dependendencia mediante métodos con la propiedad 'prperty'  -->
     <bean id="miSecretarioEmpleado" class="es.lardevpro.IoC.SecretarioEmpleado">
         <property name="informeNuevo" ref="miInforme"/>
         <property name="email" value="${email}"/>
