@@ -11,7 +11,7 @@ public class AppMain {
 		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		
-		// petición de beans
+		// petición de bean
 		SecretarioEmpleado empleado3 = contexto.getBean("miSecretarioEmpleado",SecretarioEmpleado.class);
 		
 		// comprobación de las dependencias introducidas por construntur y métodos mediante xml y archivo externo
