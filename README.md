@@ -1,9 +1,6 @@
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg" 
-       alt="Diagrama Spring Framework" 
-       width="600" 
-       style="border-radius: 12px;" />
-</p>
+![Spring Framework Logo](https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg)
+
+
 
 
 # 🌱 Ejercicios y Conceptos de Spring Framework
