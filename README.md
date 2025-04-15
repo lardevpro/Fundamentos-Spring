@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*aXe6MaOyhdIP5WqdPHhSFw.png" 
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg" 
        alt="Diagrama Spring Framework" 
        width="600" 
        style="border-radius: 12px;" />
