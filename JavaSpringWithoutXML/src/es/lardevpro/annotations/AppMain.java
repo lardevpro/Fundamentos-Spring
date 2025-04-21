@@ -10,15 +10,10 @@ public class AppMain {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(EmpleadosConfig.class);
 		
 		//pedir un bean al contenedor
-		Empleados empleado1 = context.getBean("ComercialExperimentado", Empleados.class);
-		Empleados empleado2 = context.getBean("ComercialExperimentado", Empleados.class);
+		Empleados empleado1 = context.getBean("directorFinanciero", Empleados.class);
 		
-		//por defecto Spring usa el patrón Singleton por lo que utiliza el mismo espacio en memoria para todos los objetos
-		//en este caso he puesto la etiqueta @Scope("prototype") para que haga diferentes instancias
-		//para hacer pruebas puedes quitar la anotación @Scope("prototype") de la clase ComercialExperimentado
-		if(empleado1 == empleado2) System.out.println("empleado1 y empleado2 apuntan al mismo lugar en memoria");
-		else System.out.println("empleado1 y empleado2 NO apuntan al mismo lugar en memoria");
-		
+		System.out.println(empleado1.getInforme());
+		System.out.println(empleado1.getTareas());
 		
 		//cerrar el contexto
 		context.close();
