@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>PatternSingletonAndPrototype</name>
+	<name>JavaAnnotations@Component</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1745258392734</id>
+			<id>1745258392725</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
