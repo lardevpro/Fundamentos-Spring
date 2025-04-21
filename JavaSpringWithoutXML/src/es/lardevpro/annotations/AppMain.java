@@ -1,13 +1,13 @@
 package es.lardevpro.annotations;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AppMain {
 
 	public static void main(String[] args) {
 		
-		//leer el xml de configuración
-		ClassPathXmlApplicationContext context  = new ClassPathXmlApplicationContext("applicationContext.xml");
+		//leer el class de configuración desde la clase Empleados.class
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(EmpleadosConfig.class);
 		
 		//pedir un bean al contenedor
 		Empleados empleado1 = context.getBean("ComercialExperimentado", Empleados.class);
