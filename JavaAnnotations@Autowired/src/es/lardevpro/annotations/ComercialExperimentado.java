@@ -1,9 +1,17 @@
 package es.lardevpro.annotations;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component("ComercialExperimentado")
 public class ComercialExperimentado implements Empleados {
+	
+	private CreacionInformeFinanciero nuevoInforme;
+
+	@Autowired  //busca e implementa el objeto de la clase que necesita. En este caso CreacionInformeFinanciero
+	public ComercialExperimentado(CreacionInformeFinanciero nuevoInforme) {
+		this.nuevoInforme = nuevoInforme;
+	}
 
 	@Override
 	public String getTareas() {
@@ -14,7 +22,9 @@ public class ComercialExperimentado implements Empleados {
 	@Override
 	public String getInforme() {
 		
-		return "Esto es un informe generado por el comercial";
+		return nuevoInforme.getInformeFinanciero();
 	}
+	
 
+	
 }

@@ -13,8 +13,9 @@ public class AppMain {
 		Empleados empleado1 = context.getBean("ComercialExperimentado", Empleados.class);
 		
 		//usar el bean
-		System.out.println(empleado1.getTareas());
-		
+		System.out.println("Tareas: "+empleado1.getTareas());
+		System.out.println("Informe: "+empleado1.getInforme());
+
 		//cerrar el contexto
 		context.close();
 
