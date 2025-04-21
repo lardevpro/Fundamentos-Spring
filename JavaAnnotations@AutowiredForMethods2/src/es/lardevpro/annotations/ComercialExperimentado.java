@@ -5,10 +5,14 @@ import org.springframework.stereotype.Component;
 
 @Component("ComercialExperimentado")
 public class ComercialExperimentado implements Empleados {
-	@Autowired
+	
 	private CreacionInformeFinanciero nuevoInforme;
 	
-	
+	@Autowired
+	public void setNuevoInforme(CreacionInformeFinanciero nuevoInforme) {
+		this.nuevoInforme = nuevoInforme;
+	}
+
 	@Override
 	public String getTareas() {
 		
